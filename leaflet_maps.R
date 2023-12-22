@@ -6,7 +6,6 @@ require(leaflet)
 require(grDevices)
 require(htmlwidgets)
 
-
 #load csv with locality records, decimal latitude and longitude etc
 museum_data<-read.csv("geographic_data.csv")
 
@@ -20,7 +19,6 @@ museum_data<-museum_data[!is.na(museum_data$lon_dec),]
 museum_data$ano[is.na(museum_data$ano)]<-""
 museum_data$revised_accuracy[which(is.na(museum_data$revised_accuracy))]<-0
 museum_data<-museum_data[museum_data$revised_accuracy<=41,]
-
 
 #Create a unique list of species by concatenating the genus and species columns
 museum_data$genus_species<-paste0(museum_data$genus,"_",museum_data$species)
