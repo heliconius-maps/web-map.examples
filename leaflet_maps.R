@@ -16,7 +16,6 @@ museum_data<-museum_data[!is.na(museum_data$lat_dec),]
 museum_data<-museum_data[!is.na(museum_data$lon_dec),]
 
 #and do any other necessary filtering to clean the data
-museum_data$ano[is.na(museum_data$ano)]<-""
 museum_data$revised_accuracy[which(is.na(museum_data$revised_accuracy))]<-0
 museum_data<-museum_data[museum_data$revised_accuracy<=41,]
 
