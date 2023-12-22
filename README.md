@@ -4,4 +4,4 @@ The script leaflet_shiny.R has code to create the Shiny web app for mapping and 
 
 geographic_data.csv contains some example geographic data for <i>Heliconius sapho</i> and <i>Heliconius telesiphe</i>.
 
-Please do not hesitate to contact me with any questions or suggestions. leaflet_maps.R  contain some Windows-specific components that may need rewriting if using a different OS
+Please do not hesitate to contact me with any questions or suggestions.
